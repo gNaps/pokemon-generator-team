@@ -11,5 +11,5 @@ export interface Desiderio {
     categoryDescription?: string;
     slug: string;
     booked_by?: User;
-    listaDesiderio: ListaDesideri;
+    listaDesiderio?: ListaDesideri;
 }

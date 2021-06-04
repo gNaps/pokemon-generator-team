@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import Link from "next/link";
 import styles from "../Navbar/Navbar.module.scss";
 
 const Navbar = () => {
@@ -16,7 +17,11 @@ const Navbar = () => {
     return (
         <>
         <div className={styles.navbar_container}>
-            <img src="/Desiderando_logo_black.png" className={styles.img_reducer} />
+            <Link href="/">
+                <a>
+                    <img src="/Desiderando_logo_black.png" className={styles.img_reducer} />
+                </a>
+            </Link>
             <div className={styles.ham_menu_icon} onClick={handleClickMenu}>
                 <input className={styles.ham_menu_icon_checkbox} type="checkbox" />
                 <div>

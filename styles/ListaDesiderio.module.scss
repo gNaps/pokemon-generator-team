@@ -1,0 +1,103 @@
+.content {
+    flex: 1;
+    width: 100%;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 20px;
+
+        h1 {
+            font-weight: 600;
+            margin: 0;
+        }
+
+        h3, p {
+            margin: 0;
+        }
+
+        .first_row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            margin-bottom: 5px;
+            margin-top: 20px;
+
+            img {
+                width: 32px;
+                height: 32px;
+                cursor: pointer;
+            }
+        }
+
+        .second_row{
+            display: flex;
+            align-items: center;
+
+            margin-bottom: 10px;
+
+            p {
+                font-size: 12px;
+                margin: 0;
+                margin-right: 10px;
+            }
+
+            .keep_surprise {
+                background-color: #71C377;
+                padding: 7px;
+                color: #f3f3f3;
+                font-size: 12px;
+                font-weight: 400;
+                border-radius: 5px;
+            }
+            .no_surprise {
+                background-color: #932432;
+                padding: 7px;
+                color: #f3f3f3;
+                font-size: 12px;
+                font-weight: 400;
+                border-radius: 5px;
+            }
+        }
+
+        .menu_container {
+            border-radius: 30px;
+            box-shadow: #c7c7c7 0px 7px 7px 0px;
+            margin: 10px 0px 20px 0px;
+
+            ul {
+                list-style: none;
+
+                li {
+                    margin: 10px 0px;
+                    cursor: pointer;
+                }
+
+                li:hover {
+                    color: #DE354C;
+                }
+            }
+        }
+    }
+
+    .filter_row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .bg_header {
+        display: flex;
+        justify-content: center;
+        
+        img {
+            height: 200px;
+        }
+    }
+}

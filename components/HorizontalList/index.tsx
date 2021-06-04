@@ -1,5 +1,5 @@
-import { ChangeEvent } from "react";
-import { ChangeEventHandler, useRef, useState } from "react";
+import { ChangeEvent, useRef, useState } from "react";
+import Link from "next/link";
 import { ListaDesideri } from "../../models/ListaDesideri";
 import styles from "../HorizontalList/HorizontalList.module.scss";
 
@@ -41,16 +41,24 @@ const HorizontalList = ({type, list, label}: HorizontalListProps) => {
             <div className={styles.header}>
                 {type === "own" &&
                     list.map(el => (
-                        <div className={`${styles.card} ${styles.card_own}`} key={el.id}>
-                            {el.name}
-                        </div>
+                        <Link href={`/lista-desiderio/${el.slug}`}>
+                            <a>
+                                <div className={`${styles.card} ${styles.card_own}`} key={el.id}>
+                                    {el.name}
+                                </div>
+                            </a>
+                        </Link>
                     )
                 )}
                 {type === "invite" &&
                     list.map(el => (
-                        <div className={`${styles.card} ${styles.card_invite}`} key={el.id}>
-                            {el.name}
-                        </div>
+                        <Link href={`/lista-desiderio/${el.slug}`}>
+                            <a>
+                                <div className={`${styles.card} ${styles.card_invite}`} key={el.id}>
+                                    {el.name}
+                                </div>
+                            </a>
+                        </Link>
                     )
                 )}
             </div>

@@ -8,5 +8,10 @@ export interface ListaDesideri {
     notify_booked?: boolean;
     invited_users?: Array<User>
     followers?: Array<User>
-    desideri?: Array<Desiderio>
+    desideri?: Array<Desiderio>,
+    keep_surprise?: boolean,
+    public?: boolean,
+    owner?: User,
+    created_at: string,
+    description?: string
 }

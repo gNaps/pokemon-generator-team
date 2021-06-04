@@ -13,5 +13,11 @@
         border: none;
         color: #F3F3F3;
         border-radius: 8px;
+        cursor: pointer;
+    }
+
+    button:not(:first-child) {
+        margin-top: 10px;
+        background-color: #1D1D1D;
     }
 }
