@@ -1,0 +1,47 @@
+.card_poke {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+
+  img {
+    width: 80px;
+  }
+}
+
+.multipliers_types {
+  width: 100px;
+  height: 22px;
+  margin: 0.25em 0em;
+}
+.icon_multi {
+  width: 64px;
+  margin: 2em 0;
+  background-color: mediumseagreen;
+  padding: 10px;
+}
+.icon_multi_dislike {
+  width: 64px;
+  margin: 2em 0;
+  background-color: tomato;
+  padding: 10px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+
+  input {
+    min-width: 30%;
+    padding: 1em 1.5em;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%) !important;
+    border: none;
+    border-radius: 0.7em;
+    margin-right: 1em;
+  }
+}

@@ -1,47 +1,23 @@
-import HorizontalList from "../components/HorizontalList";
-import Navbar from "../components/Navbar";
-import styles from "../styles/Dashboard.module.scss";
-import { listeDesideriOwn, listeDesideriInvite, lastDesideri } from "../api/fakeApi"
-import VerticalList from "../components/VerticalList";
-import ActionButton from "../components/ActionButton";
-import { useState } from "react";
-import ListaDesideriForm from "../components/ListaDesideriForm";
+import { useEffect, useState } from "react";
+import Layout from "../components/Layout";
+import Teamlist from "../components/Teamslist";
 
 export default function Home() {
-  const [formLista, setFormLista] = useState(false);
+  const [teams, setTeams] = useState(null);
 
-  const handleClickNewList = () => {
-    setFormLista(true);
-  }
+  // fetch data
+  useEffect(() => {
+    const teams_res = localStorage.getItem("teams");
+    const teams = !!teams_res ? JSON.parse(teams_res) : undefined;
+    setTeams(teams);
+  }, []);
 
-  const listButton = [
-    {
-      label: "New list",
-      onClick: handleClickNewList
-    }
-  ];
+  return (
+    <div className="px-4 py-5">
+      <h1>Hi trainer!</h1>
+      <h6>This are your build up team.</h6>
 
-  return ( 
-    <>
-      <Navbar />
-      { !formLista &&
-        <>
-        <div className={styles.content}>
-          <div className={styles.header}>
-            <h1>Dashboard</h1>
-          </div>
-          <HorizontalList type="own" list={listeDesideriOwn} label="Own" />
-          <HorizontalList type="invite" list={listeDesideriInvite} label="Invites" />
-          <VerticalList list={lastDesideri} label="Last Desideri" showFrom={true} />
-        </div>
-        <ActionButton listButton={listButton} />
-        </>
-      }
-      { formLista &&
-        <>
-          <ListaDesideriForm setFormLista={setFormLista} />
-        </>
-      }
-    </>
-  )
+      <Teamlist teams={teams} />
+    </div>
+  );
 }

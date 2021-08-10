@@ -1,0 +1,82 @@
+.header {
+  padding: 1em 2em 0.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  color: #f7f8fb;
+}
+
+.breadcrumb {
+  padding: 0.5em 2em;
+}
+
+.card_pokemon {
+  .left_side {
+    img {
+      width: 200px;
+    }
+
+    .types {
+      img {
+        width: 100px;
+        height: 22px;
+        margin-right: 0.5em;
+      }
+    }
+  }
+
+  .right_side {
+    padding: 1em;
+    label {
+      margin-right: 1em;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    img {
+      height: 20px;
+    }
+
+    .stats_physics_weight {
+      img {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+.stats_icon {
+  width: 24px;
+}
+
+.stats_card {
+  width: 120px;
+  height: 120px;
+  padding: 2em;
+  text-align: center;
+  margin: auto;
+  border-radius: 50%;
+
+  p {
+    margin: 0;
+  }
+}
+
+.multipliers_types {
+  width: 100px;
+  height: 22px;
+  margin: 0.25em 0em;
+}
+.icon_multi {
+    width: 64px;
+    margin: 2em 0;
+    background-color: mediumseagreen;
+    padding: 10px;
+}
+.icon_multi_dislike {
+    width: 64px;
+    margin: 2em 0;
+    background-color: tomato;
+    padding: 10px;
+}

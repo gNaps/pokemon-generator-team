@@ -1,0 +1,18 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 100vh;
+    padding: 2em 0.5em;
+    position: fixed;
+    height: 100%;
+    background-color: #1a1a1a;
+    color: #f7f8fb;
+    width: 16.6666666667%;
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+}

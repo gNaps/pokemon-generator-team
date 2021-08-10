@@ -1,8 +1,7 @@
 .container {
-    display: flex;
-    flex-direction: column;
     font-family: 'Poppins', sans-serif;
-    width: 375px;
+    width: 100vw;
     margin: 0 auto;
     position: relative;
+    padding: 0 !important;
 }

@@ -1,0 +1,33 @@
+.container_team {
+    width: calc(100vw - 16.6666666667%);
+    height: 100px;
+    background-color: #f7f8fb;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%) !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .card_poke {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 1em;
+
+        img {
+            width: 80px;
+        }
+    }
+
+    .placeholder {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: #ececec;
+        margin: 0 1em;
+    }
+}

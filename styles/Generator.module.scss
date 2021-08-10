@@ -1,0 +1,49 @@
+.navigation_card {
+  background-color: #fa5353 !important;
+  box-shadow: 0 1rem 3rem rgb(247 82 82 / 0.5) !important;
+  color: #f7f8f8;
+  cursor: pointer;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  border: none;
+
+  &:hover {
+    background-color: rgb(175 59 59) !important;
+  }
+
+  i {
+    margin: 0em 0.5em;
+  }
+}
+
+.search_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+
+  input {
+    min-width: 50%;
+    padding: 1em 1.5em;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%) !important;
+    border: none;
+    border-radius: .7em;
+
+    &:active,
+    &:focus,
+    &:focus-visible {
+      border: none;
+    }
+  }
+
+  button {
+    border: none;
+    padding: 1em 1.5em;
+    margin-left: -30px;
+    border-radius: 0 1em 1em 0;
+  }
+}
